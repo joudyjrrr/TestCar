@@ -30,7 +30,7 @@ const MapHalab = () => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       />
 
-      <Marker position={[36.2021, 37.1343]} icon={orangeIcon}>
+      <Marker position={[36.20318902313614,  37.12808990242671]} icon={orangeIcon}>
         <Popup>المارتيني - مركز المدينة</Popup>
       </Marker>
 
