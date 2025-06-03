@@ -38,7 +38,7 @@ const DonationsContainer = () => {
           isPhone={false}
           titleHead={"Donations.title"}
           classNameGr="!from-black/80"
-          classNameTitle="text-7xl max-sm:text-6xl"
+          classNameTitle="!text-7xl max-sm:!text-6xl"
         />
         <div className="flex flex-col my-24 w-full text-center gap-6 justify-center items-center px-12 max-sm:px-6">
           <h1 className="text-5xl max-sm:text-3xl text-primary font-bold">{t("makeADifference")}</h1>
