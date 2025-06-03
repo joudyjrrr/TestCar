@@ -5,11 +5,17 @@ import { useTranslations, useLocale } from "next-intl";
 import useLanguageDirection from "@/i18n/useLanguageDirection";
 import { phone, phone2 } from "../../../public/images";
 
-const BannerForBage = ({ titleHead, img, classNameGr , isPhone }) => {
+const BannerForBage = ({
+  titleHead,
+  img,
+  classNameGr,
+  isPhone,
+  classNameTitle,
+}) => {
   const t = useTranslations();
   const locale = useLocale();
   const isEnglish = locale === "en";
-  useLanguageDirection(); 
+  useLanguageDirection();
 
   return (
     <div className="w-full h-screen relative overflow-hidden pt-20 mt-[80px]">
@@ -39,7 +45,9 @@ const BannerForBage = ({ titleHead, img, classNameGr , isPhone }) => {
         />
       </div>
       <div className="relative z-20 flex flex-col justify-center items-center h-full">
-        <div className="flex items-start text-9xl max-sm:text-5xl max-md:text-6xl  font-semibold max-w-full  justify-center  h-full  px-6 max-md:px-16 text-white">
+        <div
+          className={`flex items-start text-9xl max-sm:text-5xl max-md:text-6xl  font-semibold max-w-full  justify-center  h-full  px-6 max-md:px-16 text-white ${classNameTitle}`}
+        >
           {t(titleHead)}
         </div>
       </div>

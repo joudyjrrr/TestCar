@@ -9,10 +9,15 @@ import { IoClose, IoMenu } from "react-icons/io5";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useAppContext } from "@/lib/AppContext";
+import { usePathname, useRouter } from "next/navigation";
 
 const SecondHeader = ({scrollDirection}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations("header2");
+  const pathname = usePathname();
+  const currentPath = pathname.split('/').slice(2).join('/') || '/';
+  console.log(currentPath)
+  const router = useRouter();
 
   const Links = [
     { title: t("home"), to: "/" },
@@ -37,10 +42,10 @@ const SecondHeader = ({scrollDirection}) => {
         <div className="flex gap-4 items-center text-white">
           <Image className="w-[70px]" src={logoDark} alt="logo" />
           <div className="flex flex-col max-xsLg:hidden">
-            <h1 className="text-3xl font-extrabold max-sm:text-lg">
+            <h1 className="text-2xl font-extrabold max-sm:text-base">
               {t("associationNameAr")}
             </h1>
-            <span className="font-semibold text-sm">{t("associationNameEn")}</span>
+            <span className="font-semibold text-xs">{t("associationNameEn")}</span>
           </div>
         </div>
 
@@ -49,7 +54,9 @@ const SecondHeader = ({scrollDirection}) => {
             <Link
               href={li.to}
               key={i}
-              className="text-white text-lg font-medium whitespace-nowrap"
+              className={`text-white text-base font-medium whitespace-nowrap ${
+                li.to.includes(currentPath) ? "!font-extrabold" : ""
+              }`}
             >
               {li.title}
             </Link>
@@ -57,14 +64,14 @@ const SecondHeader = ({scrollDirection}) => {
         </div>
 
         <div className="flex items-center gap-4 max-sm:gap-1">
-          <Button>{t("donateNow")}</Button>
+          <Button onClick={() => router.push("/donations")} className="text-sm">{t("donateNow")}</Button>
           <LanguageSwitcher />
           <div className="hidden max-xsLg:flex items-center gap-4">
             <button onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? (
-                <IoClose className="text-white text-3xl" />
+                <IoClose className="text-white text-2xl" />
               ) : (
-                <IoMenu className="text-white text-3xl" />
+                <IoMenu className="text-white text-2xl" />
               )}
             </button>
           </div>
@@ -72,12 +79,14 @@ const SecondHeader = ({scrollDirection}) => {
       </div>
 
       {menuOpen && (
-        <div  className="z-[10000000] absolute top-[90px] left-0 w-full bg-primary text-white flex flex-col gap-4 py-4 px-6">
+        <div className="z-[10000000] absolute top-[90px] left-0 w-full bg-primary text-white flex flex-col gap-4 py-4 px-6">
           {Links.map((li, i) => (
             <Link
               href={li.to}
               key={i}
-              className="text-base font-medium"
+              className={`text-sm font-medium ${
+                li.to.includes(currentPath) ? "!font-extrabold" : ""
+              }`}
               onClick={() => setMenuOpen(false)}
             >
               {li.title}

@@ -46,16 +46,25 @@ import linkedin from "./linkedin.png"
 import facebook from "./facebook.png"
 import twitter from "./twitter.png"
 import map from "./map (1).png"
-
-
-
+import newImg from "./66.png"
+import Donations from "./Donations1.jpg"
+import logo2 from "./logo (2).png"
+import syria_internationa from "./666.png"
+import phonew from "./phone-call (1) (3).png"
+import pin2 from "./pin (2).png"
 
 
 
 
 export {
   project,
+  Donations,
+  pin2,
+  logo2,
+  phonew,
+  syria_internationa,
   time,
+  newImg,
   map,
   twitter,
   facebook,

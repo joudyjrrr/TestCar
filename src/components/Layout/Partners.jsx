@@ -4,6 +4,7 @@ import Title from "./Title";
 import {
   handshake1,
   megaphone,
+  newImg,
   projectmanagement,
   s3,
   s4,
@@ -24,35 +25,35 @@ import { useTranslations } from "next-intl";
 
 const data = [
   {
-    img: unicef,
+    img: newImg,
   },
   {
-    img: UN_Habitat,
+    img: newImg,
   },
   {
-    img: UNHCR_Logo,
+    img: newImg,
   },
   {
-    img: United_Nations_Office_for,
+    img: newImg,
   },
   {
-    img: WHO_logo,
+    img: newImg,
   },
   {
-    img: wfp,
+    img: newImg,
   },
 
   {
-    img: unicef,
+    img: newImg,
   },
   {
-    img: UN_Habitat,
+    img: newImg,
   },
   {
-    img: UNHCR_Logo,
+    img: newImg,
   },
   {
-    img: wfp,
+    img: newImg,
   },
 ];
 

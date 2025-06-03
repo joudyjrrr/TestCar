@@ -164,5 +164,34 @@
     "phone": "Phone Number",
     "message": "Message",
     "send": "Send"
+  },
+  "Donations":{
+    "title":"Donations"
+  },
+  "donations": {
+    "makeADifference": "Be the Difference....",
+    "description1": "In every corner of this country, there is a heart waiting for help, and a hand trembling with hope for support.",
+    "description2": "Your donation is not just an amount... it's a lifeline, a child's smile, warmth for the elderly, and support for a family ",
+    "description3": "exhausted by hardship. Through your contribution, we continue our mission: caring for those without support and ",
+    "description4": "restoring dignity to those in . need Contribute now, let your humanity flourish in others' lives by donating through:",
+    "alBaraka": {
+      "title": "Al Baraka Bank - Account Number",
+      "accountNumber": "7000223"
+    },
+    "islamicBank": {
+      "title": "Islamic Bank - Account Number",
+      "accountNumber": "201868"
+    },
+    "otherWaysToSupport": "You can also contribute to supporting our activities through:",
+    "contact": {
+      "title": "Contact us via",
+      "phone": "034 099 930 0963",
+      "email": "HQ@altaalouf.org"
+    },
+    "location": {
+      "title": "Visit our Association",
+      "address1": "Al-Martini - Association Building",
+      "address2": "Al-Noor - 5th Floor"
+    }
   }
 }
