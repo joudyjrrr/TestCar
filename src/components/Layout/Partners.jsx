@@ -4,7 +4,6 @@ import Title from "./Title";
 import {
   handshake1,
   megaphone,
-  newImg,
   projectmanagement,
   s3,
   s4,
@@ -25,35 +24,35 @@ import { useTranslations } from "next-intl";
 
 const data = [
   {
-    img: newImg,
+    img: unicef,
   },
   {
-    img: newImg,
+    img: UN_Habitat,
   },
   {
-    img: newImg,
+    img: UNHCR_Logo,
   },
   {
-    img: newImg,
+    img: United_Nations_Office_for,
   },
   {
-    img: newImg,
+    img: WHO_logo,
   },
   {
-    img: newImg,
+    img: wfp,
   },
 
   {
-    img: newImg,
+    img: unicef,
   },
   {
-    img: newImg,
+    img: UN_Habitat,
   },
   {
-    img: newImg,
+    img: UNHCR_Logo,
   },
   {
-    img: newImg,
+    img: wfp,
   },
 ];
 
@@ -101,7 +100,7 @@ const Partners = () => {
       <div className="grid grid-cols-6 max-sLg:grid-cols-3 gap-12 max-md:grid-cols-2 max-sm:grid-cols-1 justify-center w-fit mx-auto px-24 max-sLg:px-4  transition-all duration-500">
         {slidesToShow.map((d, i) => (
           <div key={i} className="">
-            <Image alt="" src={d.img} className=" h-[170px] " />
+            <Image alt="" src={d.img} className=" h-[150px] " />
           </div>
         ))}
       </div>
