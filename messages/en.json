@@ -193,5 +193,25 @@
       "address1": "Al-Martini - Association Building",
       "address2": "Al-Noor - 5th Floor"
     }
+  },
+   "employee": {
+    "title2": "Job Opportunities",
+    "title": "Be the change you're waiting for....",
+    "line1": "At Ta’aluf Association, we believe every individual can make a difference through their efforts and initiative.",
+    "line2": "You can plant hope and help build a more compassionate and dignified society.",
+    "volunteerNow": "Volunteer Now"
+  },
+  "vacancies": {
+    "sectionTitle": "Announced Vacancies:",
+    "jobTitle": "In-Kind Assistance Officer",
+    "location": "Protection Project – Southern Countryside",
+    "announceDate": "Sunday, 22/6/2025",
+    "deadline": "Thursday, 25/6/2025",
+    "announceDateLabel": "Announcement Date",
+    "deadlineLabel": "Application Deadline",
+    "applyNow": "Apply Now",
+    "page1": "1",
+    "page2": "2",
+    "next": "Next"
   }
 }

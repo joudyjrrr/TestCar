@@ -39,24 +39,29 @@ import contct from "./contct.jpg";
 import phone from "./phone-call (1) (3).png";
 import phone2 from "./phone-call (1) (2).png";
 
-import pin from "./pin.png"
-import email from "./email (1) (2).png"
-import time from "./time.png"
-import linkedin from "./linkedin.png"
-import facebook from "./facebook.png"
-import twitter from "./twitter.png"
-import map from "./map (1).png"
-import newImg from "./66.png"
-import Donations from "./Donations1.jpg"
-import logo2 from "./logo (2).png"
-import syria_internationa from "./666.png"
-import phonew from "./phone-call (1) (3).png"
-import pin2 from "./pin (2).png"
-
-
-
+import pin from "./pin.png";
+import email from "./email (1) (2).png";
+import time from "./time.png";
+import linkedin from "./linkedin.png";
+import facebook from "./facebook.png";
+import twitter from "./twitter.png";
+import map from "./map (1).png";
+import newImg from "./66.png";
+import Donations from "./Donations1.jpg";
+import logo2 from "./logo (2).png";
+import syria_internationa from "./666.png";
+import phonew from "./phone-call (1) (3).png";
+import pin2 from "./pin (2).png";
+import emp2 from "./emp2.jpg";
+import doctor from "./55.png";
+import clock2 from "./clock.png";
+import right from "./right-arrow.png";
 
 export {
+  right,
+  clock2,
+  doctor,
+  emp2,
   project,
   Donations,
   pin2,

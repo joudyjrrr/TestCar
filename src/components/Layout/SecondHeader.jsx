@@ -23,9 +23,9 @@ const SecondHeader = ({scrollDirection}) => {
     { title: t("home"), to: "/" },
     { title: t("about"), to: "/about" },
     { title: t("projects"), to: "/project" },
-    { title: t("news"), to: "/project" },
+    { title: t("news"), to: "/" },
     { title: t("contact"), to: "/contact-us" },
-    { title: t("jobs"), to: "/project" },
+    { title: t("jobs"), to: "/employee" },
     { title: t("Policies"), to: "/project" },
   ];
 
