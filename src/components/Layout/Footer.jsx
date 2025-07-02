@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import React from "react";
-import { altaalouf, logoDark } from "../../../public/images";
+import { altaalouf, logo1, logoDark } from "../../../public/images";
 import Image from "next/image";
 import Link from "next/link";
 import { BsEnvelope } from "react-icons/bs";
@@ -28,8 +28,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className="w-full bg-primary py-4 px-8 ps-16 max-sLg:ps-4 relative">
-        <div className="flex text-secondary py-4 px-4  text-2xl flex-col cursor-pointer gap-6 absolute end-[-5px] top-[50px] bg-white rounded-s-xl">
+      <div className="w-full bg-primary pt-6 pb-8 px-8 ps-16 max-sLg:ps-4 relative">
+        <div className="flex text-secondary py-4 px-4  text-lg flex-col cursor-pointer gap-6 absolute end-[-5px] top-[50px] bg-white rounded-s-3xl">
           <FaFacebookF />
           <FaLinkedinIn />
           <FaTwitter />
@@ -40,33 +40,33 @@ const Footer = () => {
           {/* Logo & Newsletter */}
           <div className="flex flex-col w-full">
             <div className="flex items-center gap-2 ">
-              <Image className="w-[90px]" src={logoDark} alt="logo" />
-              <div className="flex flex-col">
+             <Image className="w-[240px]" src={logo1} alt="logo" />
+              {/* <div className="flex flex-col">
                 <h1 className="text-3xl text-white  font-extrabold max-xsLg:text-lg">
                   {t("associationNameAr")}
                 </h1>
                 <span className="font-semibold text-sm  text-white">
                   {t("associationNameEn")}
                 </span>
-              </div>
+              </div> */}
             </div>
             <div>
               <p className="text-white font-medium text-xl mt-4">
                 {t("description")} <br /> {t("description2")}
               </p>
             </div>
-            {/* <div className="flex flex-col mt-4">
+            <div className="flex flex-col mt-4">
               <h1 className="text-white font-semibold text-xl ">
-                {t("newsletter.title")}
+                {t("newsletter.title")}:
               </h1>
-              <div className="flex mt-2 gap-2">
+              <div className="flex mt-4 gap-2 ">
                 <input
                   placeholder={t("newsletter.placeholder")}
                   className="bg-white rounded-[30px] px-2 py-1 border-none outline-none placeholder:text-gray-500"
                 />
                 <Button>{t("newsletter.subscribe")}</Button>
               </div>
-            </div> */}
+            </div>
           </div>
           {/* Links */}
           <div className="flex w-full flex-col ">
@@ -78,7 +78,7 @@ const Footer = () => {
                 <Link
                   href={li.href}
                   key={i}
-                  className="text-white text-lg max-sLg:text-sm font-medium text-nowrap"
+                  className="text-white text-xl max-sLg:text-sm font-medium text-nowrap"
                 >
                   - {li.label}
                 </Link>

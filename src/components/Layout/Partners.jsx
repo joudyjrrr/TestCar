@@ -4,16 +4,21 @@ import Title from "./Title";
 import {
   handshake1,
   megaphone,
+  oc,
   projectmanagement,
   s3,
   s4,
   s5,
   s6,
+  un,
   UN_Habitat,
+  unhcr,
   UNHCR_Logo,
   unicef,
   United_Nations_Office_for,
   wfp,
+  wfp2,
+  wh,
   WHO_logo,
 } from "../../../public/images";
 import Image from "next/image";
@@ -24,36 +29,24 @@ import { useTranslations } from "next-intl";
 
 const data = [
   {
-    img: unicef,
+    img: un,
   },
   {
-    img: UN_Habitat,
+    img: oc,
   },
   {
-    img: UNHCR_Logo,
+    img: unhcr,
+  },
+ 
+  {
+    img: wh,
   },
   {
-    img: United_Nations_Office_for,
-  },
-  {
-    img: WHO_logo,
-  },
-  {
-    img: wfp,
+    img: wfp2,
   },
 
-  {
-    img: unicef,
-  },
-  {
-    img: UN_Habitat,
-  },
-  {
-    img: UNHCR_Logo,
-  },
-  {
-    img: wfp,
-  },
+  
+  
 ];
 
 const Partners = () => {
@@ -100,7 +93,7 @@ const Partners = () => {
       <div className="grid grid-cols-6 max-sLg:grid-cols-3 gap-12 max-md:grid-cols-2 max-sm:grid-cols-1 justify-center w-fit mx-auto px-24 max-sLg:px-4  transition-all duration-500">
         {slidesToShow.map((d, i) => (
           <div key={i} className="">
-            <Image alt="" src={d.img} className=" h-[150px] " />
+            <Image alt="" src={d.img} className="h-[150px] " />
           </div>
         ))}
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { logoDark } from "../../../public/images";
+import { logo1, logoDark } from "../../../public/images";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
@@ -23,7 +23,7 @@ const SecondHeader = ({scrollDirection}) => {
     { title: t("home"), to: "/" },
     { title: t("about"), to: "/about" },
     { title: t("projects"), to: "/project" },
-    { title: t("news"), to: "/" },
+    { title: t("news"), to: "/news" },
     { title: t("contact"), to: "/contact-us" },
     { title: t("jobs"), to: "/employee" },
     { title: t("Policies"), to: "/project" },
@@ -33,19 +33,20 @@ const SecondHeader = ({scrollDirection}) => {
   const hideHeader = scrollDirection === "down";
 
   return (
-    <div
-      className={`bg-primary z-[100] fixed transform  h-[90px] w-full transition-transform duration-300  ${
-     hideHeader ? "translate-y-[-59%]" : "translate-y-0"
-      }`}
-    >
+  <div
+  className={`bg-primary z-[100] fixed top-[50px] left-0 h-[90px] w-full transition-transform duration-300 ${
+    hideHeader ? "translate-y-[-57%]" : "translate-y-0"
+  }`}
+>
+
       <div className="flex justify-between items-center w-full pt-2 pe-10 ps-4 max-sm:pe-2 max-sm:ps-1">
-        <div className="flex gap-4 items-center text-white">
-          <Image className="w-[70px]" src={logoDark} alt="logo" />
+        <div className="flex gap-4 items-center text-white mt-2">
+          <Image className="w-[230px]" src={logo1} alt="logo" />
           <div className="flex flex-col max-xsLg:hidden">
-            <h1 className="text-2xl font-extrabold max-sm:text-base">
+            {/* <h1 className="text-2xl font-extrabold max-sm:text-base">
               {t("associationNameAr")}
-            </h1>
-            <span className="font-semibold text-xs">{t("associationNameEn")}</span>
+            </h1> */}
+            {/* <span className="font-semibold text-xs">{t("associationNameEn")}</span> */}
           </div>
         </div>
 

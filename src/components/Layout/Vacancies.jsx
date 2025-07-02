@@ -17,9 +17,9 @@ const Vacancies = () => {
       <h1 className="text-primary text-center text-4xl font-semibold max-sm:text-3xl">
         {t("sectionTitle")}
       </h1>
-      <div className="grid grid-cols-3 max-xsLg:grid-cols-2 gap-6 mt-8 max-sm:grid-cols-1">
+      <div className="grid grid-cols-3 max-xsLg:grid-cols-2 gap-8 mt-8 max-sm:grid-cols-1">
         {vacanciesData.map((vacancy, index) => (
-          <div key={index} className="shadow p-4">
+          <div key={index} className="shadow-lg rounded-3xl p-4 bg-[#fffaf5]">
             <h1 className="text-primary font-semibold text-2xl">
               {vacancy.title}
             </h1>

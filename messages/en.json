@@ -15,7 +15,7 @@
     "donateNow": "Donate Now",
     "associationNameAr": "جمعية التألف",
     "associationNameEn": "Al-TAALOUF Association",
-     "days": "Sunday - Thursday",
+    "days": "Sunday - Thursday",
     "start": "8:00 AM",
     "end": "4:00 PM"
   },
@@ -56,8 +56,8 @@
     "missionTitle": "Mission",
     "valuesTitle": "Values"
   },
-  "contact":{
-    "title2":"Contact Us"
+  "contact": {
+    "title2": "Contact Us"
   },
   "statistics": {
     "title": "Statistics",
@@ -67,6 +67,25 @@
     "international_partnership": "International Partnership"
   },
   "news": {
+    "paragraphs": {
+      "p1": "Under the patronage of #UNFPA and in cooperation with #AlTaalouf_Association, the Hayat Center was inaugurated in the village of Balas in southern Aleppo countryside to serve as a nucleus for a humanitarian project aimed at promoting reproductive health, empowering families, and supporting the most vulnerable groups in the region.",
+      "p2": "An integrated center for relief and development services",
+      "p3": "Reproductive Health",
+      "p4": "Gender-based violence protection",
+      "p5": "Psychosocial support",
+      "p6": "Pediatric care",
+      "p7": "Economic empowerment and vocational training programs",
+      "p8": "The opening was attended by representatives from #UNFPA and the #AlTaalouf team, who toured the center to learn about its various sections and listened to the needs of beneficiaries, emphasizing the importance of this project in restoring hope and building a dignified life for displaced people and returnees.",
+      "p9": "A shared vision for a better future",
+      "p10": "In his speech, the #UNFPA_Syria representative stressed that this center is the result of a strategic partnership aimed at improving the quality of life in affected communities, while the #AlTaalouf team explained that 'Hayat' will be a safe space that contributes to bringing joy and stability back to the most vulnerable families.",
+      "p11": "This opening is part of ongoing efforts to support crisis survivors and enhance the resilience of communities within the framework of the comprehensive humanitarian response in Syria."
+    },
+    "opning": "Opening of the Hayat Center in Southern Aleppo Countryside: A New Beginning for a Better Life",
+    "centerOpening": "Opening of Hayat Center",
+    "news": "News",
+    "home": "Home",
+    "relatedNews": "Related News:",
+    "dateAndLocation": "Tuesday 2025/04/24 - Southern Aleppo countryside",
     "title": "Latest News",
     "readMore": "Read More",
     "card1": {
@@ -142,7 +161,7 @@
     "rights": "All rights reserved © Al-Ta'alouf Association 2025",
     "workingHours": "From 8:00 AM to 4:00 PM"
   },
-   "contact2": {
+  "contact2": {
     "title": "Contact Us",
     "suggestionTitle": "Do you have a suggestion or complaint?",
     "messageLine1": "If you have any questions, suggestions, or complaints, we are listening.",
@@ -165,8 +184,8 @@
     "message": "Message",
     "send": "Send"
   },
-  "Donations":{
-    "title":"Donations"
+  "Donations": {
+    "title": "Donations"
   },
   "donations": {
     "makeADifference": "Be the Difference....",
@@ -194,7 +213,7 @@
       "address2": "Al-Noor - 5th Floor"
     }
   },
-   "employee": {
+  "employee": {
     "title2": "Job Opportunities",
     "title": "Be the change you're waiting for....",
     "line1": "At Ta’aluf Association, we believe every individual can make a difference through their efforts and initiative.",

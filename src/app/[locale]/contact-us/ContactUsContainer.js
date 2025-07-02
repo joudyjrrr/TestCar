@@ -51,6 +51,7 @@ const ContactUsContainer = () => {
           isPhone={false}
           titleHead={"contact2.title"}
           classNameGr="!from-black/80"
+          classNameTitle="text-7xl"
         />
         <div className="flex max-sm:px-2 max-xsLg:flex-col mt-16 w-full px-16 gap-24 justify-between">
           <div className="flex flex-col">

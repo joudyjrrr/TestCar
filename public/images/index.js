@@ -56,8 +56,30 @@ import emp2 from "./emp2.jpg";
 import doctor from "./55.png";
 import clock2 from "./clock.png";
 import right from "./right-arrow.png";
+import logo1 from "./logo 1.png";
+import wfp2 from "./wfp.png";
+import unhcr from "./unhcr.png";
+import oc from "./oc.png";
+import wh from "./wh2.png";
+import un from "./un.png";
+import news from "./news.jpg";
+import f1 from "./I1.png";
+import c1 from "./I0.png";
+import n1 from "./I2.png";
+import x3 from "./I3.png";
 
 export {
+  f1,
+  c1,
+  n1,
+  x3,
+  news,
+  un,
+  wh,
+  unhcr,
+  oc,
+  wfp2,
+  logo1,
   right,
   clock2,
   doctor,

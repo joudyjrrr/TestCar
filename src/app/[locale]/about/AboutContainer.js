@@ -46,7 +46,12 @@ const AboutContainer = () => {
         className={`w-full overflow-x-hidden  z-[50] relative h-screen `}
         onScroll={handleScroll}
       >
-        <BannerForBage isPhone={false} img={aboutBanner} titleHead={"about.title2"} />
+        <BannerForBage
+          isPhone={false}
+          img={aboutBanner}
+          classNameTitle="text-8xl"
+          titleHead={"about.title2"}
+        />
         <About
           content={
             <>

@@ -77,15 +77,9 @@ const LatestNew = () => {
       : visibleSlides;
 
   return (
-    <div className="my-[50px] py-8 relative">
-      <Title
-        title={t("news.title")}
-        img={megaphone}
-        className1="!ps-24"
-        className2={`start-[15px] top-[-9px]`}
-      />
-
-      <div className="grid grid-cols-3 gap-10 max-sLg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 justify-center w-fit mx-auto px-24 max-sLg:px-4 max-sm:px-4 transition-all duration-500">
+    <div className="mb-[50px] mt-4 px-8 pb-4 relative max-sm:px-4">
+   
+      <div className="grid grid-cols-3 gap-10 max-sLg:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 justify-center w-fit mx-auto px-14 max-sLg:px-4 max-sm:px-4 transition-all duration-500">
         {slidesToShow.map((d, i) => (
           <div
             key={i}

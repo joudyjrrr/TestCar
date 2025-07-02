@@ -31,7 +31,7 @@ const FirstHeader = () => {
             </p>
           </div>
         </div>
-        <div className="flex text-white text-2xl max-sm:text-lg items-center gap-2 cursor-pointer">
+        <div className="flex text-white text-lg max-sm:text-lg items-center gap-2 cursor-pointer">
           <FaFacebookF />
           <FaLinkedinIn />
         
