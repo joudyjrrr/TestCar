@@ -20,32 +20,18 @@ import { useAppContext } from "@/lib/AppContext";
 import FirstHeader from "@/components/Layout/FirstHeader";
 import SecondHeader from "@/components/Layout/SecondHeader";
 import BannerForBage from "@/components/Layout/BannerForBage";
+import useScrollDirection from "@/i18n/useScrollDirection";
 
 const AboutContainer = () => {
   const t = useTranslations("about");
   const locale = useLocale();
   const isEnglish = locale === "en";
-  const [scrollDirection, setScrollDirection] = useState("up");
-  const lastScrollY = useRef(0);
-  const handleScroll = (e) => {
-    console.log("first");
-    const scrollTop = e.currentTarget.scrollTop;
-    if (scrollTop > lastScrollY.current) {
-      setScrollDirection("down");
-    } else {
-      setScrollDirection("up");
-    }
-    lastScrollY.current = scrollTop;
-  };
-
+  const atTop = useScrollDirection();
   return (
-    <>
+    <div className="w-full h-full ">
       <FirstHeader />
-      <SecondHeader scrollDirection={scrollDirection} />
-      <div
-        className={`w-full overflow-x-hidden  z-[50] relative h-screen `}
-        onScroll={handleScroll}
-      >
+      <SecondHeader scrollDirection={atTop} />
+      <div className={`w-full overflow-x-hidden z-[50] relative `}>
         <BannerForBage
           isPhone={false}
           img={aboutBanner}
@@ -139,7 +125,7 @@ const AboutContainer = () => {
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

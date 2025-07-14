@@ -11,12 +11,12 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { useAppContext } from "@/lib/AppContext";
 import { usePathname, useRouter } from "next/navigation";
 
-const SecondHeader = ({scrollDirection}) => {
+const SecondHeader = ({ scrollDirection }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = useTranslations("header2");
   const pathname = usePathname();
-  const currentPath = pathname.split('/').slice(2).join('/') || '/';
-  console.log(currentPath)
+  const currentPath = pathname.split("/").slice(2).join("/") || "/";
+  console.log(currentPath);
   const router = useRouter();
 
   const Links = [
@@ -29,16 +29,12 @@ const SecondHeader = ({scrollDirection}) => {
     { title: t("Policies"), to: "/project" },
   ];
 
-
-  const hideHeader = scrollDirection === "down";
-
   return (
-  <div
-  className={`bg-primary z-[100] fixed top-[50px] left-0 h-[90px] w-full transition-transform duration-300 ${
-    hideHeader ? "translate-y-[-57%]" : "translate-y-0"
-  }`}
->
-
+    <div
+      className={`bg-primary z-[100] fixed ${
+        scrollDirection ? " top-[50px]" : " top-[0px]"
+      } left-0 h-[90px] w-full transition-transform duration-300 `}
+    >
       <div className="flex justify-between items-center w-full pt-2 pe-10 ps-4 max-sm:pe-2 max-sm:ps-1">
         <div className="flex gap-4 items-center text-white mt-2">
           <Image className="w-[230px]" src={logo1} alt="logo" />
@@ -65,7 +61,9 @@ const SecondHeader = ({scrollDirection}) => {
         </div>
 
         <div className="flex items-center gap-4 max-sm:gap-1">
-          <Button onClick={() => router.push("/donations")} className="text-sm">{t("donateNow")}</Button>
+          <Button onClick={() => router.push("/donations")} className="text-sm">
+            {t("donateNow")}
+          </Button>
           <LanguageSwitcher />
           <div className="hidden max-xsLg:flex items-center gap-4">
             <button onClick={() => setMenuOpen(!menuOpen)}>

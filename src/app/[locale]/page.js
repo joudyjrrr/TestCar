@@ -14,32 +14,20 @@ import Title from "@/components/Layout/Title";
 import useLanguageDirection from "@/i18n/useLanguageDirection";
 import { useAppContext } from "@/lib/AppContext";
 import { useTranslations } from "next-intl";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { megaphone } from "../../../public/images";
+import useScrollDirection from "@/i18n/useScrollDirection";
 
 export default function Home() {
   useLanguageDirection();
   const t = useTranslations();
-  const [scrollDirection, setScrollDirection] = useState("up");
-  const lastScrollY = useRef(0);
-  const handleScroll = (e) => {
-    const scrollTop = e.currentTarget.scrollTop;
-    if (scrollTop > lastScrollY.current) {
-      setScrollDirection("down");
-    } else {
-      setScrollDirection("up");
-    }
-    lastScrollY.current = scrollTop;
-  };
+  const atTop = useScrollDirection()
 
   return (
-    <>
+    <div className="w-full h-full ">
       <FirstHeader />
-      <SecondHeader scrollDirection={scrollDirection} />
-      <div
-        className={`w-full overflow-x-hidden  z-[50] relative h-screen overflow-y-scroll`}
-        onScroll={handleScroll}
-      >
+      <SecondHeader scrollDirection={atTop} />
+      <div className={`w-full overflow-x-hidden z-[50] relative `}>
         <div className="w-full">
           <Banner />
           <About
@@ -69,6 +57,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   );
 }

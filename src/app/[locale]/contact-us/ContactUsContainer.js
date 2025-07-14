@@ -22,30 +22,19 @@ import Title from "@/components/Layout/Title";
 
 import dynamic from "next/dynamic";
 import Footer from "@/components/Layout/Footer";
+import useScrollDirection from "@/i18n/useScrollDirection";
 const MapHalab = dynamic(() => import("./MapWithMarkers"), {
   ssr: false,
 });
 
 const ContactUsContainer = () => {
   const t = useTranslations();
-  const locale = useLocale();
-  const isEnglish = locale === "en";
-  const [scrollDirection, setScrollDirection] = useState("up");
-  const lastScrollY = useRef(0);
-  const handleScroll = (e) => {
-    const scrollTop = e.currentTarget.scrollTop;
-    setScrollDirection(scrollTop > lastScrollY.current ? "down" : "up");
-    lastScrollY.current = scrollTop;
-  };
-
+  const atTop = useScrollDirection();
   return (
-    <>
+    <div className="w-full h-full ">
       <FirstHeader />
-      <SecondHeader scrollDirection={scrollDirection} />
-      <div
-        className="w-full overflow-x-hidden z-[50] relative h-screen"
-        onScroll={handleScroll}
-      >
+      <SecondHeader scrollDirection={atTop} />
+      <div className={`w-full overflow-x-hidden z-[50] relative `}>
         <BannerForBage
           img={contct}
           isPhone={false}
@@ -150,7 +139,7 @@ const ContactUsContainer = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

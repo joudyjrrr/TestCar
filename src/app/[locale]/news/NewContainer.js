@@ -10,6 +10,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import Footer from "@/components/Layout/Footer";
+import useScrollDirection from "@/i18n/useScrollDirection";
 const dataKeys = [
   {
     id: 1,
@@ -51,26 +52,14 @@ const dataKeys = [
 ];
 const NewContainer = () => {
   const t = useTranslations();
-  const locale = useLocale();
-  const isEnglish = locale === "en";
-  const [scrollDirection, setScrollDirection] = useState("up");
-  const lastScrollY = useRef(0);
-  const pathName = usePathname();
+  const atTop = useScrollDirection();
   const router = useRouter();
-  const handleScroll = (e) => {
-    const scrollTop = e.currentTarget.scrollTop;
-    setScrollDirection(scrollTop > lastScrollY.current ? "down" : "up");
-    lastScrollY.current = scrollTop;
-  };
-
+    const pathName = usePathname();
   return (
-    <div>
+    <div className="w-full h-full ">
       <FirstHeader />
-      <SecondHeader scrollDirection={scrollDirection} />
-      <div
-            className={`w-full overflow-x-hidden  z-[50] relative h-screen overflow-y-scroll`}
-        onScroll={handleScroll}
-      >
+      <SecondHeader scrollDirection={atTop} />
+      <div className={`w-full overflow-x-hidden z-[50] relative `}>
         <BannerForBage
           img={news}
           isPhone={false}
@@ -86,7 +75,7 @@ const NewContainer = () => {
                 router.push(`/${d.id}`);
               }}
               key={i}
-              className="flex flex-col cursor-pointer rounded-[40px] bg-white shadow-md h-[445px]"
+              className="flex flex-col cursor-pointer rounded-3xl bg-[#fffaf5] shadow-lg h-[420px]"
             >
               <Image
                 alt=""
@@ -103,6 +92,14 @@ const NewContainer = () => {
                     {t(d.dateKey)}
                   </p>
                 </div>
+              </div>
+              <div className="flex gap-2 py-2 px-4 items-end h-full cursor-pointer justify-end">
+                <p className="text-[#575757] text-lg">{t("news.readMore")}</p>
+                <FaArrowLeft
+                  className={`text-xl text-secondary  ${
+                    pathName.includes("en") && " transform rotate-180"
+                  }`}
+                />
               </div>
             </div>
           ))}

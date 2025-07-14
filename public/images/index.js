@@ -67,8 +67,10 @@ import f1 from "./I1.png";
 import c1 from "./I0.png";
 import n1 from "./I2.png";
 import x3 from "./I3.png";
+import volunteer from "./8889.jpg";
 
 export {
+  volunteer,
   f1,
   c1,
   n1,

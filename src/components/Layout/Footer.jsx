@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="w-full bg-primary pt-6 pb-8 px-8 ps-16 max-sLg:ps-4 relative">
+      <div className="w-full bg-primary pt-9 pb-10 px-8 ps-16 max-sLg:ps-4 relative">
         <div className="flex text-secondary py-4 px-4  text-lg flex-col cursor-pointer gap-6 absolute end-[-5px] top-[50px] bg-white rounded-s-3xl">
           <FaFacebookF />
           <FaLinkedinIn />
