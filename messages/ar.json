@@ -271,7 +271,7 @@
       "choose": "اختر",
       "yes": "نعم",
       "no": "لا",
-      "save": "حفظ",
+      "save": "تقديم الطلب",
       "levelHighSchool": "ثانوية",
       "levelInstitute": "معهد",
       "levelUniversity": "جامعة",
@@ -294,7 +294,8 @@
       "Qualifications_experience": "المؤهلات والخبرة",
       "Volunteer_preferences": "تفضيلات التطوع",
       "condition_healthy": "الحالة الصحية",
-      "Values_expectations": "القيم والتوقعات"
+      "Values_expectations": "القيم والتوقعات",
+      "Enter_answer":"أدخل اجابتك "
     }
   }
 }

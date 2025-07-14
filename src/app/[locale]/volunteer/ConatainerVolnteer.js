@@ -15,7 +15,7 @@ const inputStyle =
 const labelStyle = "block mb-1 text-[#0095ff] font-medium";
 
 const sectionStyle =
-  "border border-[#0095ff]/20 rounded-xl p-6 mb-12 shadow-sm bg-white";
+  " p-4 mb-6 shadow-sm bg-white";
 
 const sectionTitleStyle =
   "text-xl font-bold mb-4 text-[#0095ff] border-b border-[#0095ff]/30 pb-2";
@@ -48,7 +48,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.fullName")} *</label>
                 <input
-                  placeholder={t("form.fullName")}
+                  placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   required
                 />
@@ -68,7 +68,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.nationality")} *</label>
                 <input
-                  placeholder={t("form.nationality")}
+                   placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   required
                 />
@@ -76,7 +76,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.phone")} *</label>
                 <input
-                  placeholder={t("form.phone")}
+                 placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   required
                 />
@@ -85,7 +85,7 @@ const ConatainerVolnteer = () => {
                 <label className={labelStyle}>{t("form.email")} *</label>
                 <input
                   type="email"
-                  placeholder={t("form.email")}
+                  placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   required
                 />
@@ -93,7 +93,7 @@ const ConatainerVolnteer = () => {
               <div className="md:col-span-2">
                 <label className={labelStyle}>{t("form.address")}</label>
                 <textarea
-                  placeholder={t("form.address")}
+                  placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                 />
               </div>
@@ -120,7 +120,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.specialization")}</label>
                 <input
-                  placeholder={t("form.specialization")}
+                 placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                 />
               </div>
@@ -151,25 +151,25 @@ const ConatainerVolnteer = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className={labelStyle}>{t("form.orgName")}</label>
-                <input placeholder={t("form.orgName")} className={inputStyle} />
+                <input  placeholder={t("form.Enter_answer")} className={inputStyle} />
               </div>
               <div>
                 <label className={labelStyle}>{t("form.activityType")}</label>
                 <input
-                  placeholder={t("form.activityType")}
+                placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                 />
               </div>
               <div>
                 <label className={labelStyle}>{t("form.period")}</label>
-                <input placeholder={t("form.period")} className={inputStyle} />
+                <input  placeholder={t("form.Enter_answer")} className={inputStyle} />
               </div>
               <div className="md:col-span-2">
                 <label className={labelStyle}>
                   {t("form.experienceGained")}
                 </label>
                 <textarea
-                  placeholder={t("form.experienceGained")}
+                  placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                 />
               </div>
@@ -207,7 +207,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.otherSkills")} *</label>
                 <textarea
-                  placeholder={t("form.otherSkills")}
+                  placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   rows={3}
                   required
@@ -216,7 +216,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.languages")} *</label>
                 <textarea
-                  placeholder={t("form.languages")}
+                  placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   required
                 />
@@ -236,7 +236,7 @@ const ConatainerVolnteer = () => {
                   {t("form.preferredTasks")} *
                 </label>
                 <textarea
-                  placeholder={t("form.preferredTasks")}
+                   placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   required
                 />
@@ -246,7 +246,7 @@ const ConatainerVolnteer = () => {
                   {t("form.unpreferredTasks")}
                 </label>
                 <textarea
-                  placeholder={t("form.unpreferredTasks")}
+                  placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                 />
               </div>
@@ -292,7 +292,7 @@ const ConatainerVolnteer = () => {
                   {t("form.healthExplanation")}
                 </label>
                 <textarea
-                  placeholder={t("form.healthExplanation")}
+                 placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                 />
               </div>
@@ -309,7 +309,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.values")} *</label>
                 <textarea
-                  placeholder={t("form.values")}
+                   placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   rows={3}
                   required
@@ -318,7 +318,7 @@ const ConatainerVolnteer = () => {
               <div>
                 <label className={labelStyle}>{t("form.expectations")} *</label>
                 <textarea
-                  placeholder={t("form.expectations")}
+               placeholder={t("form.Enter_answer")}
                   className={inputStyle}
                   rows={3}
                   required
@@ -326,8 +326,8 @@ const ConatainerVolnteer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-end ">
-            <Button>{t("form.save")}</Button>
+          <div className="w-full flex justify-center ">
+            <Button className="!px-14 !text-2xl">{t("form.save")}</Button>
           </div>
         </div>
       </div>

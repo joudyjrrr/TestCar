@@ -269,7 +269,7 @@
       "choose": "Choose",
       "yes": "Yes",
       "no": "No",
-      "save": "Save",
+      "save": "Submit the  Information",
       "personalInfo": "Personal Info",
       "Academic_qualifications": "Academic qualifications",
       "Volunteer_experiences": "Volunteer Experiences",
@@ -292,7 +292,8 @@
         "workingWithChildren": "Working with Children",
         "awarenessSessions": "Conducting Awareness Sessions",
         "accounting": "Accounting Skills"
-      }
+      },
+      "Enter_answer":"Enter your answer"
     }
   }
 }
