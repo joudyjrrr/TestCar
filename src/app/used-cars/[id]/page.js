@@ -3,13 +3,13 @@ import CarDetailClient from "./CarDetailClient";
 
 export async function generateMetadata({ params }) {
   try {
-    const res = await fetch("http://localhost:3001/data", { cache: "no-store" });
+    const res = await fetch("http://localhost:3000/data", { cache: "no-store" });
     const data = await res.json();
 
     const car = data?.used_cars?.find((c) => c.id.toString() === params.id);
     if (!car) return {};
 
-    const url = `http://localhost:3001/used-cars/${car.id}`;
+    const url = `http://localhost:3000/used-cars/${car.id}`;
     return {
       title: `${car.title} - AED ${car.price}`,
       description: `${car.year} ${car.make_title} ${car.model_title} in ${car.city_name}`,

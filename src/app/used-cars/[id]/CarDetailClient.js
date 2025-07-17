@@ -59,7 +59,7 @@ export default function CarDetailClient({ id }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/data")
+      .get("http://localhost:3000/data")
       .then((res) => {
         const found = res.data?.used_cars?.find((c) => c.id.toString() === id);
         setCar(found);

@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/data`)
+      .get(`http://localhost:3000/data`)
       .then((res) => {
         setCars(res.data?.used_cars || []);
         setLoading(false);
