@@ -1,10 +1,12 @@
 import createNextIntlPlugin from "next-intl/plugin";
 
-const withNextIntl = createNextIntlPlugin();
+
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
+  images: {
+    domains: ['ymimg1.b8cdn.com'],   
+  },
   async redirects() {
     return [
       {
@@ -16,4 +18,4 @@ const nextConfig = {
   },
 };
 
-export default withNextIntl(nextConfig);
+export default nextConfig;
