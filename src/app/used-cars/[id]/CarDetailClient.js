@@ -77,7 +77,7 @@ export default function CarDetailClient({ id }) {
   return (
     <main className="p-6 max-w-6xl mx-auto space-y-6 bg-gray-50">
       {/* Car Title */}
-      <h1 className="text-3xl font-bold text-center text-gray-800">
+      <h1 className="text-3xl max-sm:text-xl font-bold text-center text-gray-800">
         {car.title}
       </h1>
 
@@ -96,7 +96,7 @@ export default function CarDetailClient({ id }) {
             </div>
           </div>
 
-          <div className="flex gap-2 overflow-x-auto pb-2">
+          <div className="flex gap-2 overflow-x-auto pb-2 max-sm:grid max-sm:grid-cols-10">
             {car.pictures.map((pic, idx) => (
               <div
                 key={idx}
@@ -123,7 +123,7 @@ export default function CarDetailClient({ id }) {
           <p className="text-green-600 text-2xl font-semibold">
             AED {car.price.toLocaleString()}
           </p>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center max-sm:text-sm">
             <p className="text-gray-600 flex items-center gap-2">
               <FaMapMarkerAlt className="text-gray-500" /> {car.city_name}
             </p>
