@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
     const car = data?.used_cars?.find((c) => c.id.toString() === params.id);
     if (!car) return {};
 
-    const url = `https://example.com/used-cars/${car.id}`;
+    const url = `http://localhost:3001/used-cars/${car.id}`;
     return {
       title: `${car.title} - AED ${car.price}`,
       description: `${car.year} ${car.make_title} ${car.model_title} in ${car.city_name}`,
